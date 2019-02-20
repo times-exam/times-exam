@@ -27,4 +27,7 @@ Follow the documentation at https://devcenter.heroku.com/articles/git
 ## More Details on the React App, see the Read Me file under the web directory.
 
 <!-- to Deploy code to Heroku server -->
-## git push heroku master
+## ./gradlew clean test -PisLocal=true --- Test the React and Java code locally
+## git push origin master --- will send to git hub
+## git push heroku master --- will deploy to heroku server
+https://polar-island-29569.herokuapp.com/
