@@ -32,13 +32,15 @@ node {
     // If true, it will download node using above parameters.
     // If false, it will try to use globally installed node.
 
-    if(isLocal)
-    {
-        download = false
-    }
-    else {
-        download = true
-    }
+    // if(isLocal)
+    // {
+    //     download = false
+    // }
+    // else {
+    //     download = true
+    // }
+
+    download = true
 
 }
 

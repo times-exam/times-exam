@@ -25,3 +25,6 @@ Follow the documentation at https://devcenter.heroku.com/articles/git
 
 
 ## More Details on the React App, see the Read Me file under the web directory.
+
+<!-- to Deploy code to Heroku server -->
+## git push heroku master

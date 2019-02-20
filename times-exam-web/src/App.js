@@ -26,7 +26,7 @@ class App extends Component {
                     <h1 className="App-title">{this.state.message}</h1>
                 </header>
                 <p className="App-intro">
-                    To get started, edit <code>src/App.js</code> and save to reload. Dilip
+                    Welcome to Sajjanpur <code>src/App.js</code> and save to reload. Dilip
                 </p>
             </div>
         );
