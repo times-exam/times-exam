@@ -9,11 +9,11 @@ import Col from 'react-bootstrap/Col';
 class Home extends Component {
   render() {
     return (
-      <div className = "direction">
+     <div className = "direction">
         <Container>
           <Row>
             <Col style = {{width: 50, height: 1000,backgroundColor: 'powderblue'}} >1 of 3</Col>
-            <Col xs={6}>2 of 3 (wider)</Col>
+            <Col xs={6}>Home Page</Col>
             <Col style = {{backgroundColor: 'powderblue'}}>3 of 3</Col>
           </Row>
           <Row style = {{height: 100,backgroundColor: 'skyblue'}}>
@@ -21,7 +21,7 @@ class Home extends Component {
           </Row>
           </Container>
 
-      </div>
+      </div> 
     );
   }
 }
