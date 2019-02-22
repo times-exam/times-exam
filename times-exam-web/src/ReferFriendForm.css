@@ -1,0 +1,13 @@
+.AddQuestionForm {
+    width: 80%;
+    margin: 50px 10%;
+
+  }
+
+  .AddQuestionForm_input {
+    margin-bottom: 20px;
+  }
+
+  .AddQuestionForm_input > label{
+    display: block;
+  }

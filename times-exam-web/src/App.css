@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
 }
 
 .App-navbar{
@@ -43,7 +43,7 @@ curser: pointer;
   background-color: #D0E3F0;
 }
 
-.direction > div {
+.direction {
   height: 1000px;
 
   }
