@@ -16,6 +16,8 @@ import Railways from './components/Railways';
 import './bootstrap.min.css';
 import { Nav, Navbar, NavDropdown, Form, FormControl, Button, ButtonToolbar, ToggleButtonGroup, ToggleButton } from 'react-bootstrap';
 import logo from './logo.svg';
+import './App.css'
+import Image from 'react-bootstrap/Image'
 
 
 const Study = () => <h2>Study</h2>;
@@ -27,17 +29,21 @@ class App extends Component {
             <Router>
                 <div>
 
-                    <div class="container-fluid">
-                        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                    <div class="App-body">
+                        <Navbar collapseOnSelect expand="lg" variant="light">
 
                             <img src={logo} className="App-logo" alt="logo" />
-                            <Navbar.Brand href="#home">TimesExam.com</Navbar.Brand>
+                            <Navbar.Brand href="#home" class="App"><NavLink to="/" href="#home">TimesExam.com</NavLink></Navbar.Brand>
+                            {/* <Image src={logo.png} fluid />; */}
+                            {/* <img src="Banner.jpg" class="img-rounded"></img> */}
+                            <p>Hello,<a href="#hello">Student</a></p>
+                            
 
                         </Navbar>
                     </div>
-                    <div class="container-fluid">
-                        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                            <Navbar.Brand><NavLink to="/" href="#home">Home</NavLink></Navbar.Brand>
+                    <div >
+                        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" class="App-navbar">
+                            <NavLink to="/" href="#home">Home</NavLink>
                             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                             <Navbar.Collapse id="responsive-navbar-nav">
                                 <Nav className="mr-auto" >

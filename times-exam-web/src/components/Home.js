@@ -18,16 +18,16 @@ class Home extends Component {
             <Col style = {{width: 30, height: 1000,backgroundColor: 'powderblue'}} >
 
             <div className="content">
-            <a aria-current="true" href="#Notification" class="active" >Important Notification</a>
+            <a aria-current="true" href="#Notification" >Important Notification</a>
             </div>
             <div className="content">
-            <a aria-current="true" href="#ExamCalender" class="active">Exam Calender</a>
+            <a aria-current="true" href="#ExamCalender" >Exam Calender</a>
               </div>
               <div className="content">
           
-            <a aria-current="true" href="#JobOpenings" class="active">Current Openings</a></div>
+            <a aria-current="true" href="#JobOpenings" >Current Openings</a></div>
             <div className="content">
-            <a aria-current="true" href="#ContactUs" class="active">Contact Us</a>
+            <a aria-current="true" href="#ContactUs" >Contact Us</a>
             </div>
             </Col>
             <Col xs={6}>Home Page</Col>

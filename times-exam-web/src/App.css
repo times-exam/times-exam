@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -18,8 +19,15 @@
   /* color: white; */
 }
 
+.App-body {
+  background-image: url("Banner1.jpg");
+  height: 400px;
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+}
+
 .App-navbar{
-  background-color: #282c34;
+  background-color: #ce8e04;
 }
 
 .App-footer {
@@ -104,99 +112,6 @@ ul.header li a {
   margin-bottom: 10px;
 }
 
-/* 
-                /* Remove the navbar's default margin-bottom and rounded borders */ 
-                .navbar {
-                  margin-bottom: 0;
-                  border-radius: 0;
-                }
-                
-                /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-                .row.content {height: 450px}
-                
-                /* Set gray background color and 100% height */
-                .sidenav {
-                  padding-top: 20px;
-                  background-color: #f1f1f1;
-                  height: 100%;
-                }
-                
-                /* Set black background color, white text and some padding */
-                footer {
-                  background-color: #555;
-                  color: white;
-                  padding: 15px;
-                }
-                
-                /* On small screens, set height to 'auto' for sidenav and grid */
-                @media screen and (max-width: 767px) {
-                  .sidenav {
-                    height: auto;
-                    padding: 15px;
-                  }
-                  .row.content {height:auto;} 
-                }
-                .navbar {
-                  overflow: hidden;
-                  background-color: #333;
-                  font-family: Arial, Helvetica, sans-serif;
-                }
-                
-                .navbar a {
-                  float: left;
-                  font-size: 16px;
-                  color: white;
-                  text-align: center;
-                  padding: 14px 16px;
-                  text-decoration: none;
-                }
-                
-                .dropdown {
-                  float: left;
-                  overflow: hidden;
-                }
-                
-                .dropdown .dropbtn {
-                  cursor: pointer;
-                  font-size: 16px;  
-                  border: none;
-                  outline: none;
-                  color: white;
-                  padding: 14px 16px;
-                  background-color: inherit;
-                  font-family: inherit;
-                  margin: 0;
-                }
-                
-                .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-                  background-color: red;
-                }
-                
-                .dropdown-content {
-                  display: none;
-                  position: absolute;
-                  background-color: #f9f9f9;
-                  min-width: 160px;
-                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                  z-index: 1;
-                }
-                
-                .dropdown-content a {
-                  float: none;
-                  color: black;
-                  padding: 12px 16px;
-                  text-decoration: none;
-                  display: block;
-                  text-align: left;
-                }
-                
-                .dropdown-content a:hover {
-                  background-color: #ddd;
-                }
-                
-                .show {
-                  display: block;
-                } */
 
 @keyframes App-logo-spin {
   from {
