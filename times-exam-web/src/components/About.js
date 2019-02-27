@@ -8,8 +8,7 @@ import Col from 'react-bootstrap/Col';
 class About extends Component {
   render() {
     return (
-        <div className = "direction">
-        <Container>
+        <div className = "direction" class="container-fluid">
           <Row>
             <Col style = {{width: 50, height: 1000,backgroundColor: 'powderblue'}} >1 of 3</Col>
             <Col xs={6}>About</Col>
@@ -18,8 +17,6 @@ class About extends Component {
           <Row style = {{height: 100,backgroundColor: 'skyblue'}}>
             <h1 >This is the footer section</h1>
           </Row>
-          </Container>
-
       </div>
     );
   }
