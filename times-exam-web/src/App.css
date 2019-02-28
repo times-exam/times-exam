@@ -20,7 +20,7 @@
 }
 
 .App-body {
-  background-image: url("Banner1.jpg");
+  /* background-image: url("Banner1.jpg"); */
   height: 400px;
   font-size: calc(10px + 2vmin);
   text-align: center;

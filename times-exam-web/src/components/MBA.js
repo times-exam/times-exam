@@ -10,14 +10,7 @@ class MBA extends Component {
     return (
       <div className = "direction" class="container-fluid">
       
-        <Row>
-          <Col style = {{width: 50, height: 1000,backgroundColor: 'powderblue'}} >1 of 3</Col>
-          <Col xs={6}>MBA Test Series</Col>
-          <Col style = {{backgroundColor: 'powderblue'}}>3 of 3</Col>
-        </Row>
-        <Row style = {{height: 100,backgroundColor: 'skyblue'}}>
-          <h1 >This is the footer section</h1>
-        </Row>
+      MBA Test Series
        
 
     </div>
