@@ -17,14 +17,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAlignJustify } from '@fortawesome/free-solid-svg-icons'
 
 
-class NavBar extends Component {
+class MainBar extends Component {
     render() {
         return (
             <Router>
                 <div>
-                    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" >
+                    <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark" >
                         <Navbar.Brand href="#home">
-                            <NavLink to="/" href="#home">
+                            <NavLink to="/" href="#home" style={{ color: 'white' }}>
                                 <img
                                     alt=""
                                     src={logo}
@@ -35,9 +35,10 @@ class NavBar extends Component {
                                 {'TimesExam.com'}
                             </NavLink>
                         </Navbar.Brand>
+
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
-                            <Nav className="mr-auto" >
+                            <Nav className="mr-auto" style={{ align: "right" }}>
                                 {/* <Nav.Link><NavLink to="/about" href="#about" >About</NavLink> </Nav.Link> */}
                                 {/* <Nav.Link><NavLink to="/contact" href="#contact">Contact</NavLink></Nav.Link> */}
                                 <NavDropdown title="Study" id="collasible-nav-dropdown">
@@ -56,21 +57,18 @@ class NavBar extends Component {
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                                 </NavDropdown>
-                                <Nav>
-                                    <Form inline>
-                                        <FormControl type="text" placeholder="Search for courses, test series, current affairs etc" className="mr-sm-2" />
-                                    </Form>
-                                </Nav>
-
                             </Nav>
                             <Nav>
+                            <Form inline>
+                            <FormControl type="text" placeholder="Search for courses, test series, current affairs etc" className="mr-sm-2" />
+                        </Form>
                                 <Nav.Link href="#register">Login/Register</Nav.Link>
-                                <Nav.Link eventKey={2} href="#cart">
-                                    Cart
-                                    </Nav.Link>
+                                <Nav.Link eventKey={2} href="#cart">Cart</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
+
                     </Navbar>
+
                     <div>
 
                         <Route exact path='/' component={Home} />
@@ -92,4 +90,4 @@ class NavBar extends Component {
     }
 }
 
-export default NavBar;
+export default MainBar;

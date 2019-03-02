@@ -3,7 +3,7 @@ import React, { Component } from 'react';
  
 
 
-class TopBar extends Component {
+class Footer extends Component {
     render() {
         return (
             <div>
@@ -19,4 +19,4 @@ class TopBar extends Component {
     }
 }
 
-export default TopBar;
+export default Footer;

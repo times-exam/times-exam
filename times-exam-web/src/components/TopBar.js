@@ -14,33 +14,22 @@ class TopBar extends Component {
     render() {
         return (
             <div>
-
-                <Navbar collapseOnSelect expand="lg" >
-
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <FontAwesomeIcon icon={faAlignJustify} />
-                    <FontAwesomeIcon icon={faCoffee} />
-                    <Navbar.Brand href="#home" class="App"><NavLink to="/" href="#home">TimesExam.com</NavLink></Navbar.Brand>
-                    {/* <Image src={logo1.png} fluid />; */}
-                    <img src={banner5}/>
-                    <p>Hello,<a href="#hello">Student</a></p>
-
-
-                </Navbar>
-
-
-                {/* <nav class="navbar navbar-light bg-light justify-content-between">
-  <a class="navbar-brand">Navbar</a>
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
-</nav> */}
-
-
-
-                
-
+                <Navbar collapseOnSelect expand="lg" bg="light" variant="light" >
+                        
+                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                        <Navbar.Collapse id="responsive-navbar-nav">
+                            <Nav className="mr-auto" >
+                                <Nav.Link><NavLink to="/" href="#about" >Home</NavLink> </Nav.Link>
+                                <Nav.Link><NavLink to="/exam" href="#exam">Exam</NavLink></Nav.Link>
+                                <Nav.Link><NavLink to="/courses" href="#courses">Courses</NavLink></Nav.Link>
+                                <Nav.Link><NavLink to="/currentaffairs" href="#currentaffairs">Current Affairs</NavLink></Nav.Link>
+                                <Nav.Link><NavLink to="/quiz" href="#quiz">Quiz</NavLink></Nav.Link>
+                                <Nav.Link><NavLink to="/interview" href="#interview">Interview</NavLink></Nav.Link>
+                                <Nav.Link><NavLink to="/preexampaper" href="#preexampaper">Previous year Exam paper</NavLink></Nav.Link>
+                                <Nav.Link><NavLink to="/stories" href="#stories">Motivational Stories</NavLink></Nav.Link>
+                                </Nav>
+                                </Navbar.Collapse>
+                    </Navbar>
             </div>
         );
     }

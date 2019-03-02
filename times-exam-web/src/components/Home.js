@@ -11,6 +11,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import TimesSlide from '../components/TimesSlide';
 import OfferBar from '../components/OfferBar';
 import Cards from '../components/Cards';
+import TopBar from '../components/TopBar';
+
+
 
 
 
@@ -19,11 +22,11 @@ class Home extends Component {
   render() {
     return (
      <div >
-        {/* <NavBar /> */}
-                {/* <TopBar />  */}
                 <TimesSlide />
                 <br />
                 <OfferBar />
+                <br />
+                <TopBar /> 
                 <br />
                 <Cards />
                 <br />

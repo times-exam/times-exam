@@ -1,48 +1,56 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
-import banner2 from '../images/banner2.jpg'
+import banner2 from '../images/banner2.jpg';
+import Banner1 from '../images/Banner1.jpg';
+import banner3 from '../images/banner3.jpg';
+import '../components/component.css'
+
 
 class TimesSlide extends Component {
     render() {
         return (
-            <div style={{height:'200px'}}>
+            <div >
 
                 <Carousel>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src={banner2.jpg}
-                            width="30"
-                            height="30"
+                            src={Banner1}
                             alt="First slide"
+                            width = "30"
+                            height = "300"
                         />
                         <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <h3>Exam Preparation Simplified!</h3>
+                            <p>Practice, Analyze and Score Better!</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src={banner2.jpg}
-                            alt="Third slide"
+                            src={banner2}
+                            alt="Second slide"
+                            width = "30"
+                            height = "300"
                         />
 
                         <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>Exam Preparation Simplified!</h3>
+                            <p>Practice, Analyze and Score Better!</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src={banner2.jpg}
+                            src={banner3}
                             alt="Third slide"
+                            width = "30"
+                            height = "300"
                         />
 
                         <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3>Exam Preparation Simplified!</h3>
+                            <p>Practice, Analyze and Score Better!</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
