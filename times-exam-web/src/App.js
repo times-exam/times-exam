@@ -23,6 +23,7 @@ class App extends Component {
                 <ServiceBar />
                 <MainBar />
                 <TimesSlide />
+                <Home />
                 <Footer />
             </div>
 
