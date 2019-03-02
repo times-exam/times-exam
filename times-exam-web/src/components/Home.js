@@ -19,6 +19,7 @@ import TopBar from '../components/TopBar';
 
 
 class Home extends Component {
+  
   render() {
     return (
      <div >
