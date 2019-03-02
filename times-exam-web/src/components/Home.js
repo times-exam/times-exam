@@ -22,7 +22,7 @@ class Home extends Component {
   render() {
     return (
      <div >
-                <TimesSlide />
+                {/* <TimesSlide /> */}
                 <br />
                 <OfferBar />
                 <br />

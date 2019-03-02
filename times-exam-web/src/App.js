@@ -9,6 +9,7 @@ import AlertBar from './components/AlertBar';
 import ServiceBar from './components/ServiceBar';
 import Home from './components/Home';
 import MainBar from './components/MainBar';
+import TimesSlide from './components/TimesSlide';
 
 
 
@@ -21,6 +22,7 @@ class App extends Component {
                 <AlertBar />
                 <ServiceBar />
                 <MainBar />
+                <TimesSlide />
                 <Footer />
             </div>
 
