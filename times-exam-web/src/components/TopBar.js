@@ -18,7 +18,7 @@ class TopBar extends Component {
                         
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
-                            <Nav className="mr-auto" >
+                            <Nav className="mr-auto" class="nav">
                                 <Nav.Link><NavLink to="/" href="#about" >Home</NavLink> </Nav.Link>
                                 <Nav.Link><NavLink to="/exam" href="#exam">Exam</NavLink></Nav.Link>
                                 <Nav.Link><NavLink to="/courses" href="#courses">Courses</NavLink></Nav.Link>

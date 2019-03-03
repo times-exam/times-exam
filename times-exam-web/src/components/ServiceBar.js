@@ -15,6 +15,7 @@ import About from './About';
 import logo from '../logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAlignJustify } from '@fortawesome/free-solid-svg-icons'
+import '../components/service.css'
 
 
 class ServiceBar extends Component {
@@ -25,15 +26,15 @@ class ServiceBar extends Component {
                     <Navbar collapseOnSelect expand="lg" bg="light" variant="light" >
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
-                            <Nav className="mr-auto" >
-                                <Nav.Link><NavLink to="/about" href="#about" style={{ color: 'black' }}>Banking</NavLink> </Nav.Link> 
-                                <Nav.Link><NavLink to="/contact" href="#contact" style={{ color: 'black' }}>SSC</NavLink></Nav.Link> 
-                                <Nav.Link><NavLink to="/about" href="#about" style={{ color: 'black' }}>FCI</NavLink> </Nav.Link> 
-                                <Nav.Link><NavLink to="/contact" href="#contact" style={{ color: 'black' }}>Insurance</NavLink></Nav.Link> 
-                                <Nav.Link><NavLink to="/about" href="#about" style={{ color: 'black' }}>Railways</NavLink> </Nav.Link> 
-                                <Nav.Link><NavLink to="/contact" href="#contact" style={{ color: 'black' }}>Defence</NavLink></Nav.Link> 
-                                <Nav.Link><NavLink to="/about" href="#about" style={{ color: 'black' }}>MBA</NavLink> </Nav.Link> 
-                                <Nav.Link><NavLink to="/contact" href="#contact" style={{ color: 'black' }}>IIBF</NavLink></Nav.Link> 
+                            <Nav className="mr-auto" class="nav">
+                                <Nav.Link><NavLink to="/about" href="#about">Banking</NavLink> </Nav.Link> 
+                                <Nav.Link><NavLink to="/contact" href="#contact" >SSC</NavLink></Nav.Link> 
+                                <Nav.Link><NavLink to="/about" href="#about" >FCI</NavLink> </Nav.Link> 
+                                <Nav.Link><NavLink to="/contact" href="#contact" >Insurance</NavLink></Nav.Link> 
+                                <Nav.Link><NavLink to="/about" href="#about" >Railways</NavLink> </Nav.Link> 
+                                <Nav.Link><NavLink to="/contact" href="#contact" >Defence</NavLink></Nav.Link> 
+                                <Nav.Link><NavLink to="/about" href="#about" >MBA</NavLink> </Nav.Link> 
+                                <Nav.Link><NavLink to="/contact" href="#contact" >IIBF</NavLink></Nav.Link> 
                                 </Nav>
                         </Navbar.Collapse>
 

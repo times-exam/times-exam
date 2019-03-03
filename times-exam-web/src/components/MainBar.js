@@ -15,6 +15,7 @@ import About from './About';
 import logo from '../logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAlignJustify } from '@fortawesome/free-solid-svg-icons'
+import '../components/mainbar.css'
 
 
 class MainBar extends Component {
@@ -38,10 +39,10 @@ class MainBar extends Component {
 
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
-                            <Nav className="mr-auto" style={{ align: "right" }}>
+                            <Nav className="mr-auto" >
                                 {/* <Nav.Link><NavLink to="/about" href="#about" >About</NavLink> </Nav.Link> */}
                                 {/* <Nav.Link><NavLink to="/contact" href="#contact">Contact</NavLink></Nav.Link> */}
-                                <NavDropdown title="Study" id="collasible-nav-dropdown">
+                                <NavDropdown title="Study" id="collasible-nav-dropdown" class=".nav-right ">
                                     <NavDropdown.Item><NavLink to="/qa" href="#action/3.1">QA</NavLink></NavDropdown.Item>
                                     <NavDropdown.Item><NavLink to="/english" href="#action/3.2">English</NavLink></NavDropdown.Item>
                                     <NavDropdown.Item><NavLink to="/reasoning" href="#action/3.3">Reasoning</NavLink></NavDropdown.Item>

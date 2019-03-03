@@ -12,6 +12,7 @@ import TimesSlide from '../components/TimesSlide';
 import OfferBar from '../components/OfferBar';
 import Cards from '../components/Cards';
 import TopBar from '../components/TopBar';
+import MainSlide from './MainSlide';
 
 
 
@@ -23,7 +24,7 @@ class Home extends Component {
   render() {
     return (
      <div >
-                <TimesSlide />
+                <MainSlide />
                 <br />
                 <OfferBar />
                 <br />
@@ -31,6 +32,7 @@ class Home extends Component {
                 <br />
                 <Cards />
                 <br />
+                <TimesSlide />
               
       </div> 
     );
