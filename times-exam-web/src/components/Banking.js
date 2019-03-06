@@ -1,18 +1,18 @@
 
-
 import React, { Component } from 'react';
 
 
-class IBPS extends Component {
+class Banking extends Component {
   render() {
     return (
       <div className = "direction" class="container-fluid">
       
- IBPS Test Series
- 
+      Banking Page
+       
+
     </div>
     );
   }
 }
 
-export default IBPS;
+export default Banking;

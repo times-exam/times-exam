@@ -1,17 +1,10 @@
 // App.js
 
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link, NavLink, NavLinkProps } from 'react-router-dom';
-import NavBar from './components/MainBar';
-import Footer from './components/Footer';
+import { Nav, Navbar, NavDropdown, Form, FormControl, Button, ButtonToolbar, ToggleButtonGroup, ToggleButton } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container'
 import './bootstrap.min.css';
-import AlertBar from './components/AlertBar';
-import ServiceBar from './components/ServiceBar';
-import Home from './components/Home';
-import MainBar from './components/MainBar';
-import TimesSlide from './components/TimesSlide';
-import MainSlide from './components/MainSlide';
-
+import FirstPage from './components/FirstPage'
 
 
 
@@ -20,11 +13,23 @@ class App extends Component {
         return (
 
             <div>
-                <AlertBar />
-                <ServiceBar />
-                <MainBar />
-                <Footer />
+                <FirstPage />
+                <div >
+                    <Navbar sticky='bottom' expand="lg" variant="light" bg="light">
+                        <Container>
+                            <Navbar.Brand href="#">Navbar</Navbar.Brand>
+                        </Container>
+                        <p>This is the footer</p>
+                    </Navbar>
+
+                </div>
             </div>
+
+
+
+
+
+
 
         );
     }

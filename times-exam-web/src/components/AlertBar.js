@@ -6,7 +6,7 @@ class AlertBar extends Component {
     render() {
         return (
             <div class="bar">
-
+<h2>Alert Bar</h2>
                 <Alert variant="warning" >
                 
                     Today's Mock Test (With Expiry timing of Test. It will have 10 questions) !!!

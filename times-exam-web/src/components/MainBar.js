@@ -9,20 +9,23 @@ import IBPS from './IBPS';
 import MBA from './MBA';
 import SBI from './SBI';
 import Railways from './Railways';
+import About from './About';
 import { Nav, Navbar, NavDropdown, Form, FormControl, Button, ButtonToolbar, ToggleButtonGroup, ToggleButton } from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, Route, Link, NavLink, NavLinkProps } from 'react-router-dom';
-import About from './About';
 import logo from '../logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAlignJustify } from '@fortawesome/free-solid-svg-icons'
 import '../components/mainbar.css'
+import TopBar from './TopBar';
+import Exam from './Exam';
 
 
 class MainBar extends Component {
     render() {
         return (
-            <Router>
+            <Switch>
                 <div>
+                    <h2>Main Bar</h2>
                     <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark" >
                         <Navbar.Brand href="#home">
                             <NavLink to="/" href="#home" style={{ color: 'white' }}>
@@ -40,9 +43,9 @@ class MainBar extends Component {
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="mr-auto" >
-                                {/* <Nav.Link><NavLink to="/about" href="#about" >About</NavLink> </Nav.Link> */}
-                                {/* <Nav.Link><NavLink to="/contact" href="#contact">Contact</NavLink></Nav.Link> */}
-                                <NavDropdown title="Study" id="collasible-nav-dropdown" class=".nav-right ">
+                                <Nav.Link><NavLink to="/about" href="#about" style={{ color: 'white' }}>About</NavLink> </Nav.Link>
+                                <Nav.Link><NavLink to="/contact" href="#contact"style={{ color: 'white' }}>Contact</NavLink></Nav.Link>
+                                <NavDropdown title="Study" id="collasible-nav-dropdown">
                                     <NavDropdown.Item><NavLink to="/qa" href="#action/3.1">QA</NavLink></NavDropdown.Item>
                                     <NavDropdown.Item><NavLink to="/english" href="#action/3.2">English</NavLink></NavDropdown.Item>
                                     <NavDropdown.Item><NavLink to="/reasoning" href="#action/3.3">Reasoning</NavLink></NavDropdown.Item>
@@ -60,16 +63,16 @@ class MainBar extends Component {
                                 </NavDropdown>
                             </Nav>
                             <Nav>
-                            <Form inline>
-                            <FormControl type="text" placeholder="Search for courses, test series, current affairs etc" className="mr-sm-2" />
-                        </Form>
+                                <Form inline>
+                                    <FormControl type="text" placeholder="Search for courses, test series, current affairs etc" className="mr-sm-2" />
+                                </Form>
                                 <Nav.Link href="#register">Login/Register</Nav.Link>
                                 <Nav.Link eventKey={2} href="#cart">Cart</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
 
                     </Navbar>
-
+                
                     <div>
 
                         <Route exact path='/' component={Home} />
@@ -84,9 +87,11 @@ class MainBar extends Component {
                         <Route path='/sbi' component={SBI} />
                         <Route path='/mba' component={MBA} />
                         <Route path='/railways' component={Railways} />
+                        <Route path='/exam' component={Exam} />
                     </div>
+
                 </div>
-            </Router>
+            </Switch>
         );
     }
 }

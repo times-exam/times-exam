@@ -13,6 +13,7 @@ import OfferBar from '../components/OfferBar';
 import Cards from '../components/Cards';
 import TopBar from '../components/TopBar';
 import MainSlide from './MainSlide';
+import Footer from './Footer'
 
 
 
@@ -24,15 +25,10 @@ class Home extends Component {
   render() {
     return (
      <div >
-                <MainSlide />
-                <br />
-                <OfferBar />
-                <br />
-                <TopBar /> 
-                <br />
+                
                 <Cards />
-                <br />
                 <TimesSlide />
+                
               
       </div> 
     );

@@ -1,18 +1,19 @@
-
+// Tutorials.js
 
 import React, { Component } from 'react';
 
 
-class IBPS extends Component {
+class Courses extends Component {
   render() {
     return (
       <div className = "direction" class="container-fluid">
       
- IBPS Test Series
- 
+      Courses Page
+       
+
     </div>
     );
   }
 }
 
-export default IBPS;
+export default Courses;

@@ -1,18 +1,19 @@
-
+// Tutorials.js
 
 import React, { Component } from 'react';
 
 
-class IBPS extends Component {
+class FCI extends Component {
   render() {
     return (
       <div className = "direction" class="container-fluid">
       
- IBPS Test Series
- 
+      FCI Page
+       
+
     </div>
     );
   }
 }
 
-export default IBPS;
+export default FCI;

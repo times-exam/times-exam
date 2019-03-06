@@ -6,7 +6,7 @@ class OfferBar extends Component {
     render() {
         return (
             <div class="bar">
-
+<h2>Offer Bar</h2>
                 <Alert variant="warning">
                 
                     Hurry Offer Ending Soon !!!

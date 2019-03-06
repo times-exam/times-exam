@@ -10,7 +10,6 @@ class TimesSlide extends Component {
     render() {
         return (
             <div >
-
                 <Carousel>
                     <Carousel.Item>
                         <img
@@ -21,7 +20,7 @@ class TimesSlide extends Component {
                             height = "300"
                         />
                         <Carousel.Caption>
-                            <h3>Exam Preparation Simplified!</h3>
+                            <h3>Preparing you for the Best!</h3>
                             <p>Practice, Analyze and Score Better!</p>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -35,7 +34,7 @@ class TimesSlide extends Component {
                         />
 
                         <Carousel.Caption>
-                        <h3>Exam Preparation Simplified!</h3>
+                        <h3>Preparing you for the Best!</h3>
                             <p>Practice, Analyze and Score Better!</p>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -49,7 +48,7 @@ class TimesSlide extends Component {
                         />
 
                         <Carousel.Caption>
-                        <h3>Exam Preparation Simplified!</h3>
+                        <h3>Preparing you for the Best!</h3>
                             <p>Practice, Analyze and Score Better!</p>
                         </Carousel.Caption>
                     </Carousel.Item>
