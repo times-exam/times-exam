@@ -70,7 +70,7 @@ height: 400px;
 
 
 body {
-  background-color: rgb(241, 240, 247);
+  /* background-color: rgb(241, 240, 247); */
   padding: 20px;
   margin: 0;
 }
@@ -100,7 +100,7 @@ ul.header li a {
   display: inline-block;
 }
 .content {
-  background-color: #FFF;
+  /* background-color: #FFF; */
   padding: 20px;
   margin-bottom: 10px;
 }

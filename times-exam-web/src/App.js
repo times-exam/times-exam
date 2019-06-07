@@ -22,6 +22,7 @@ class App extends Component {
                         <p>This is the footer</p>
                     </Navbar>
 
+            
                 </div>
             </div>
 

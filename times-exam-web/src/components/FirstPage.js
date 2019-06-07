@@ -5,6 +5,7 @@ import Home from './Home';
 import About from './About';
 import { Nav, Navbar, NavDropdown, Form, FormControl, Button, ButtonToolbar, ToggleButtonGroup, ToggleButton } from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, Route, Link, NavLink, NavLinkProps } from 'react-router-dom';
+import Dropdown from 'react-bootstrap/Dropdown'
 import logo from '../logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAlignJustify } from '@fortawesome/free-solid-svg-icons'
@@ -86,18 +87,29 @@ class FirstPage extends Component {
 
                             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                             <Navbar.Collapse id="responsive-navbar-nav">
-                                <Nav className="mr-auto" >
-                                    <Nav.Link><NavLink to="/about" href="#about" style={{ color: 'white' }}>About</NavLink> </Nav.Link>
-                                    <Nav.Link><NavLink to="/contact" href="#contact" style={{ color: 'white' }}>Contact</NavLink></Nav.Link>
-                                    <NavDropdown title="Study" id="collasible-nav-dropdown">
-                                        <NavDropdown.Item><NavLink to="/qa" href="#action/3.1">QA</NavLink></NavDropdown.Item>
+                                <Nav className="mr-auto">
+                                    <NavDropdown title="Courses" id="collasible-nav-dropdown" style={{ color: 'white' }}>
+                                        <NavDropdown.Item 
+                                            drop ="right" 
+                                            variant="secondary"
+                                            title={` Drop $"right" `}
+                                            id={`dropdown-button-drop-$"right"`}
+                                            key="right">
+                                            <NavLink to="/qa" href="#action/3.1">QA</NavLink>
+                                            <Dropdown.Item eventKey="1">Action</Dropdown.Item>
+                                            <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
+                                            <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
+                                            <Dropdown.Divider />
+                                            <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+                                        </NavDropdown.Item>
+
                                         <NavDropdown.Item><NavLink to="/english" href="#action/3.2">English</NavLink></NavDropdown.Item>
                                         <NavDropdown.Item><NavLink to="/reasoning" href="#action/3.3">Reasoning</NavLink></NavDropdown.Item>
                                         <NavDropdown.Item><NavLink to="/computer" href="#action/3.4">Computer Apt</NavLink></NavDropdown.Item>
                                         <NavDropdown.Divider />
                                         <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                                     </NavDropdown>
-                                    <NavDropdown title="Exam" id="collasible-nav-dropdown">
+                                    <NavDropdown title="Exam" id="collasible-nav-dropdown" style={{ color: 'white' }}>
                                         <NavDropdown.Item><NavLink to="/ibps" href="#action/3.1">IBPS</NavLink></NavDropdown.Item>
                                         <NavDropdown.Item><NavLink to="/sbi" href="#action/3.2">SBI</NavLink></NavDropdown.Item>
                                         <NavDropdown.Item><NavLink to="/mba" href="#action/3.3">MBA</NavLink></NavDropdown.Item>
@@ -105,6 +117,11 @@ class FirstPage extends Component {
                                         <NavDropdown.Divider />
                                         <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                                     </NavDropdown>
+                                    <Nav.Link><NavLink to="/currentaffairs" href="#currentaffairs" style={{ color: 'white' }}>Current Affairs</NavLink> </Nav.Link>
+                                    <Nav.Link><NavLink to="/quiz" href="#quiz" style={{ color: 'white' }}>Quiz</NavLink></Nav.Link>
+                                    <Nav.Link><NavLink to="/interview" href="#interview" style={{ color: 'white' }}>Interview</NavLink></Nav.Link>
+                                    <Nav.Link><NavLink to="/preexampaper" href="#preexampaper" style={{ color: 'white' }}>Previous year Exam paper</NavLink></Nav.Link>
+                                    <Nav.Link><NavLink to="/stories" href="#stories" style={{ color: 'white' }} >Motivational Stories</NavLink></Nav.Link>
                                 </Nav>
                                 <Nav>
                                     <Form inline>
@@ -167,26 +184,6 @@ class FirstPage extends Component {
                             <p>Hurry Offer Ending Soon !!!</p>
                         </Alert>
                     </div>
-                    <div>
-                        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" >
-                            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                            <Navbar.Collapse id="responsive-navbar-nav">
-                                <Nav className="mr-auto" class="nav">
-                                    <Nav.Link><NavLink to="/" href="#home" style={{ color: 'white' }}>Home</NavLink> </Nav.Link>
-                                    <Nav.Link><NavLink to="/exam" href="#exam" style={{ color: 'white' }}>Exam</NavLink></Nav.Link>
-                                    <Nav.Link><NavLink to="/courses" href="#courses" style={{ color: 'white' }}>Courses</NavLink></Nav.Link>
-                                    <Nav.Link><NavLink to="/currentaffairs" href="#currentaffairs" style={{ color: 'white' }}>Current Affairs</NavLink></Nav.Link>
-                                    <Nav.Link><NavLink to="/quiz" href="#quiz" style={{ color: 'white' }}>Quiz</NavLink></Nav.Link>
-                                    <Nav.Link><NavLink to="/interview" href="#interview" style={{ color: 'white' }}>Interview</NavLink></Nav.Link>
-                                    <Nav.Link><NavLink to="/preexampaper" href="#preexampaper" style={{ color: 'white' }}>Previous year Exam paper</NavLink></Nav.Link>
-                                    <Nav.Link><NavLink to="/stories" href="#stories" style={{ color: 'white' }} >Motivational Stories</NavLink></Nav.Link>
-                                </Nav>
-
-                            </Navbar.Collapse>
-
-                        </Navbar>
-                    </div>
-                    
                     <div>
                         <Route exact path='/' component={Home} />
                         <Route path='/banking' component={Banking} />

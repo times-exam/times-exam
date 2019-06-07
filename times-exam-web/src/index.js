@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom'
-import App from './App';
+import App from './App.test';
+
+
 
 ReactDOM.render((
   <BrowserRouter>
@@ -9,5 +11,3 @@ ReactDOM.render((
   </BrowserRouter>
 ), document.getElementById('root'))
 
-// ReactDOM.render((
-//       <Jayanti />), document.getElementById('root'))
